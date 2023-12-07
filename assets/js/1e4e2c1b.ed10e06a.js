@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8560],{739:s=>{s.exports=JSON.parse('{"label":"git","permalink":"/advent-of-code-docs/blog/tags/git","allTagsPath":"/advent-of-code-docs/blog/tags","count":1,"unlisted":false}')}}]);
