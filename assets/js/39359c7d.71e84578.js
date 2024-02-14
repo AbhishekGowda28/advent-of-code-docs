@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[6940],{7840:s=>{s.exports=JSON.parse('{"label":"nx","permalink":"/advent-of-code-docs/blog/tags/nx","allTagsPath":"/advent-of-code-docs/blog/tags","count":1,"unlisted":false}')}}]);

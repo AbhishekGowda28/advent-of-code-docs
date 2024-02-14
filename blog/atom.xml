@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://abhishekgowda28.github.io/advent-of-code-docs/blog</id>
     <title>Advent of code docs Blog</title>
-    <updated>2023-12-07T00:00:00.000Z</updated>
+    <updated>2024-02-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://abhishekgowda28.github.io/advent-of-code-docs/blog"/>
     <subtitle>Advent of code docs Blog</subtitle>
     <icon>https://abhishekgowda28.github.io/advent-of-code-docs/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Adding new packages to nx]]></title>
+        <id>https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages</id>
+        <link href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages"/>
+        <updated>2024-02-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to add new package to nx package based repo]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="background">Background<a href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages#background" class="hash-link" aria-label="Direct link to Background" title="Direct link to Background">​</a></h2>
+<p>I wanted a different packages to work on different things. I don't want to have a single package that would contain everything. I wanted flexibility on creating and testing code. So went to nx package based approach.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequsite">Prerequsite<a href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages#prerequsite" class="hash-link" aria-label="Direct link to Prerequsite" title="Direct link to Prerequsite">​</a></h2>
+<p>I used nx VS code extension to create/generate the package. This made it easier to create the package.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setup">Setup<a href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages#setup" class="hash-link" aria-label="Direct link to Setup" title="Direct link to Setup">​</a></h2>
+<p>We just need to follow along the setup steps and the package would be created at the end of the steps.</p>
+<p>nx follows it's own project configuration - <a href="https://nx.dev/reference/project-configuration" target="_blank" rel="noopener noreferrer">https://nx.dev/reference/project-configuration</a></p>
+<p>For more information the above 👆 link can be followed.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
+<ul>
+<li><a href="https://nx.dev/reference/project-configuration" target="_blank" rel="noopener noreferrer">https://nx.dev/reference/project-configuration</a></li>
+</ul>]]></content>
+        <author>
+            <name>Abhishek Gowda</name>
+            <uri>https://github.com/abhishekgowda28</uri>
+        </author>
+        <category label="nx" term="nx"/>
+        <category label="package-based" term="package-based"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Repository setup]]></title>
         <id>https://abhishekgowda28.github.io/advent-of-code-docs/blog/repo-setup</id>
