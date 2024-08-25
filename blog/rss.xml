@@ -4,10 +4,53 @@
         <title>Advent of code docs Blog</title>
         <link>https://abhishekgowda28.github.io/advent-of-code-docs/blog</link>
         <description>Advent of code docs Blog</description>
-        <lastBuildDate>Tue, 13 Feb 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Aug 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[A new setup]]></title>
+            <link>https://abhishekgowda28.github.io/advent-of-code-docs/blog/setting-up-new-dev-env</link>
+            <guid>https://abhishekgowda28.github.io/advent-of-code-docs/blog/setting-up-new-dev-env</guid>
+            <pubDate>Sun, 25 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is notes for my personal use]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>I am assuming this is a new machine setup or a machine which is occasionally used and does not contain any previous setup.
+And for most part I will be talking about <strong>Linux</strong> machine</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setting-up-ssh-key">Setting up SSH key<a href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/setting-up-new-dev-env#setting-up-ssh-key" class="hash-link" aria-label="Direct link to Setting up SSH key" title="Direct link to Setting up SSH key">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-ssh-key-in-gitlab">Adding SSH key in gitlab<a href="https://abhishekgowda28.github.io/advent-of-code-docs/blog/setting-up-new-dev-env#adding-ssh-key-in-gitlab" class="hash-link" aria-label="Direct link to Adding SSH key in gitlab" title="Direct link to Adding SSH key in gitlab">​</a></h3>
+<ol>
+<li>Sign in to gitlab</li>
+<li>Click on your user profile.
+You should see a dropdown modal</li>
+<li>Click preference on it. You will be taken to the <a href="https://gitlab.com/-/profile/preferences" target="_blank" rel="noopener noreferrer">preference page</a> of your profile</li>
+<li>Look for SSH keys on the left navigation.
+If left navigation is closed click on "Sidebar Navigation" button or press <code>Ctrl+\</code>. Navigation sidebar will open.</li>
+<li>You should now be in <a href="https://gitlab.com/-/user_settings/ssh_keys" target="_blank" rel="noopener noreferrer">SSH keys page</a></li>
+<li>Locate <strong>Add new key</strong> button</li>
+<li>Click on it ☝️ (Add new key)</li>
+<li>In your machine</li>
+</ol>
+<div class="tabs-container tabList__CuJ"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_LNqP tabs__item--active">Linux</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP">Windows</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_Ymn6"><p>Navigate to user directory</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd ~</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>Locate <code>.ssh</code> directory, it is an hidden directory, navigate within it</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd ~/.ssh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>Copy public key that is generated</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cat &lt;encrypted_file_name&gt;.pub</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>copy the contents</p></div><div role="tabpanel" class="tabItem_Ymn6" hidden=""><p>Open Run, ``</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">%userprofile%</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><ul>
+<li>Locate <code>.ssh</code> directory, navigate within it</li>
+<li>Copy public key that is generated, by opening the file in notepad</li>
+<li>Copy the contents</li>
+</ul></div></div></div>
+<ol start="9">
+<li>Past the copied key into key text area</li>
+<li>Pick a title so you could differentiate when and where the token is located</li>
+<li>Choose <code>Usage type</code>. I prefer to use the same token for Authenticating and signing, you could have different token setup</li>
+<li>Choose the duration of the key when it should be invalidated.</li>
+</ol>
+<hr>
+<ul>
+<li>My suggestion/steps would get outdated, leaving gitlab ssh key <a href="https://docs.gitlab.com/ee/user/ssh.html" target="_blank" rel="noopener noreferrer">reference link</a></li>
+</ul>]]></content:encoded>
+            <category>nx</category>
+            <category>package-based</category>
+            <category>ssh</category>
+            <category>gitlab</category>
+            <category>github</category>
+        </item>
         <item>
             <title><![CDATA[Adding new packages to nx]]></title>
             <link>https://abhishekgowda28.github.io/advent-of-code-docs/blog/adding-new-packages</link>
